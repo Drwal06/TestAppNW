@@ -1,0 +1,65 @@
+body{
+	background-color: lightblue;
+}
+#calculator{
+	width: 320px;
+	height: 520px;
+	background-color: ghostwhite;
+	margin: 0 auto;
+	top: 20px;
+	position: relative;
+	border-radius: 5px;
+}
+#result{
+	height: 120px;
+	border: 1px dashed;
+}
+#equation{
+	text-align: right;
+	height: 20px;
+	margin: 0 20px;
+	padding-top: 20px;
+	font-size: 15px;
+	color: black;
+}
+#output{
+	text-align: right;
+	height: 60px;
+	margin: 10px 20px;
+	font-size: 30px;
+	border: 1px solid;
+}
+#keyboard{
+	height: 400px;
+}
+.number {
+	background-color: yellow;
+}
+.operator {
+	background-color: blue;
+}
+.operator, .number, .empty{
+	width: 50px;
+	height: 50px;
+	margin: 15px;
+	float: left;
+	border-radius: 50%;
+	border-width: 0;
+	font-weight: bold;
+	font-size: 15px;
+}
+.empty{
+	background-color: ghostwhite;
+}
+.number, .operator{
+	cursor: pointer;
+}
+.operator:active, .number:active{
+	font-size: 13px;
+}
+.operator:focus, .number:focus, .empty:focus{
+	outline: 0;
+}
+button{
+	font-size: 20px;
+}
